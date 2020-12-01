@@ -1,0 +1,16 @@
+{
+    "A":"Uppercase Short Name",
+    "FN":"full name",
+    "FIN":"first name",
+    "LN":"last name",
+    "MN":"middle name",
+    "GW":"GENERIC WRITING",
+    "PH":"phone",
+    "EM":"email",
+    "AD":"address", 
+    "WS":"web site",
+    "OBJ":"objective",
+    "SKI":"skills",
+    "ASS":"assessments",
+    "CAL":"CERTIFICATION AND LICENSES"
+}
