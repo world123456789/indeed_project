@@ -54,6 +54,8 @@ $(document).ready(function () {
                                 // $('.step2').addClass('plan_price');
                                 $('.step4').removeClass('plan_price');
                                 $('.step3').html("<h1>Analysis result</h1><h2>In resume,there is all data for conversion!</h2>");
+                           }else{
+                                $('#ex2').modal(); 
                            }
                         }
                      });
@@ -80,6 +82,9 @@ $(document).ready(function () {
                                 }
                         }
                      });
+               
+        });
+        $('.template_type').click(function(){
                
         });
 });

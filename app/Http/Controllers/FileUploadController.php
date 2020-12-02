@@ -26,6 +26,10 @@ class FileUploadController extends Controller
     public function fileAnalysis(Request $request)
     {
         // echo 'ok';
+        if(!Auth::check()){
+            $data='false'; 
+            return response()->json(['data' => $data], 200);
+        }
         $resume=$request->resume;
         $template=$request->template;
         // $key=['A','FN','GW','PH','AD'];

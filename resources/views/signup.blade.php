@@ -7,24 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-
-    <meta name="apple-mobile-web-app-title" content="Free PDF Convert">
-    <meta name="application-name" content="Free PDF Convert">
-    <meta name="msapplication-TileColor" content="#ffffff">
-
-    <meta name="theme-color" content="#ffffff">
-    <title>Membership</title>
-    <meta name="Description" content="PDF Converter membership." />
-
-    <link rel="stylesheet" href="asset/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="{{asset("public/asset/css/app.css")}}" type="text/css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese"
         type="text/css" />
     <script async defer id="jquery" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         crossorigin="anonymous"></script>
     <!-- <script src="./asset/js/javascript.js"></script> -->
-    <script src="./asset/js/jquery.min.js"></script>
-    <script src="./asset/js/javascript.js"></script>
+    <script src="{{asset("public/asset/js/jquery.min.js")}}"></script>
+    <script src="{{asset("public/asset/js/javascript.js")}}"></script>
 
 </head>
 
@@ -32,8 +23,8 @@
 
     <header class="layout-header">
         <nav class="layout-header-nav">
-            <a class="logo img-logo" href="/">
-                <img src="asset/image/logo.png" class="logo-image" alt="" srcset="">
+            <a class="logo" href="/">
+                <img src="{{asset("public/asset/image/logo.png")}}" class="logo-image" alt="" srcset="">
                 <span class="logo-text">Convert resumes to templates
                 </span>
             </a>
@@ -77,7 +68,7 @@
                         data-passthrough="ProductId=552811;UserId=;AppVersion=a" data-message=""
                         data-redirect="/order-completed">
                         <div class="pricing">Silver</div><hr>
-                        <div class="duration" style="margin-top: 15px;">10 indeed.com templates conversion per month</div>
+                        <div class="duration" style="margin-top: 15px;">30 indeed.com templates conversion per month</div>
                         <div class="ammount">5 templates to choose from $9.99/month</div><br><br><br><br>
                         <!-- <div class="period" style="    margin-bottom: 20px;">$9.99/month</div><br><br> -->
                         <div class="btn btn-success">Sign Up</div>
@@ -88,7 +79,7 @@
                         data-passthrough="ProductId=3113812;UserId=;AppVersion=a" data-message=""
                         data-redirect="/order-completed">
                        <div  class="pricing">Gold</div><hr>
-                        <div class="duration"style="font-size: 16px;">20 indeed.com and 20 non indeed template conversion per month</div>
+                        <div class="duration"style="font-size: 16px;">80 indeed.com and 20 non indeed template conversion per month</div>
                         <div class="ammount" style="    margin-bottom: 50px; margin-top: 26px; font-size: 23px;">10 templates to choose from $19.99/month</div><br><br>
                         <!-- <div class="period" style="    margin-bottom: -8px;">$19.99/month</div><br><br> -->
                         <div class="btn btn-success">Sign Up</div>
@@ -114,7 +105,7 @@
                         data-passthrough="ProductId=577466;UserId=;AppVersion=a" data-message=""
                         data-redirect="/order-completed">
                         <div class="pricing">Silver</div><hr>
-                        <div class="duration"  style="margin-top: 20px;">10 indeed.com templates conversion per month</div>
+                        <div class="duration"  style="margin-top: 20px;">30 indeed.com templates conversion per month</div>
                         <div class="ammount" style="    margin-bottom: 89px;">5 templates to choose from $99.99/year</div>
                         <!-- <div class="period" style="    margin-bottom: 74px;">$99.99/year</div><br><br> -->
                         <div class="btn btn-success">Sign Up</div>
@@ -125,7 +116,7 @@
                         data-passthrough="ProductId=552811;UserId=;AppVersion=a" data-message=""
                         data-redirect="/order-completed">
                         <div  class="pricing">Gold</div><hr>
-                        <div class="duration"  style="margin-top: 20px;    font-size: 17px;">20 indeed.com and 20 non indeed template conversion per month</div>
+                        <div class="duration"  style="margin-top: 20px;    font-size: 17px;">80 indeed.com and 20 non indeed template conversion per month</div>
                         <div class="ammount"style="margin-top: 23px;
                         margin-bottom: 88px;">10 templates to choose from $199.99/year</div>
                         <!-- <div class="period">$199.99/year</div><br><br> -->
@@ -186,8 +177,6 @@
                 <a href="/terms" class="menu-item">Terms and Privacy</a>
                 <a href="https://www.convertapi.com/" class="menu-item">Developers API</a>
             </div>
-
-
         </nav>
     </footer>
 </body>
