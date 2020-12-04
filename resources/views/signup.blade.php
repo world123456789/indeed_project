@@ -25,8 +25,10 @@
         <nav class="layout-header-nav">
             <a class="logo" href="/">
                 <img src="{{asset("public/asset/image/logo.png")}}" class="logo-image" alt="" srcset="">
-                <span class="logo-text">Convert resumes to templates
+                <div style="width:100%;text-align:right;@guest padding-top: 10px @endguest">
+                <span class="logo-text" style="    padding-right: 8em;">Converts Resume to Different Template with Little or no Edits
                 </span>
+            </div>
             </a>
             <a href="{{ route('/') }}" class="semimodal-close img-close hidden"></a>
         </nav>
@@ -52,10 +54,7 @@
             <section class="prices-container">
                 <div class="prices monthly_plan">
                     <a class="price"
-                    href="{{ route('register') }}"
-                        data-product-id="577466" data-title="1 month"
-                        data-passthrough="ProductId=577466;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                         <div  class="pricing">Free</div><hr>
                         <div class="duration" style="margin-top: 15px;">3 indeed.com templates conversion </div>
                         <div class="ammount">1 template to choose from Free</div><br><br><br><br>
@@ -63,10 +62,7 @@
                         <div class="btn btn-success">Sign Up</div>
                     </a>
                     <a class="price save"
-                    href="{{ route('register') }}"
-                        data-product-id="552811" data-title="12 months"
-                        data-passthrough="ProductId=552811;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                         <div class="pricing">Silver</div><hr>
                         <div class="duration" style="margin-top: 15px;">30 indeed.com templates conversion per month</div>
                         <div class="ammount">5 templates to choose from $9.99/month</div><br><br><br><br>
@@ -74,21 +70,15 @@
                         <div class="btn btn-success">Sign Up</div>
                     </a>
                     <a class="price best"
-                    href="{{ route('register') }}"
-                        data-product-id="519713" data-title="Lifetime"
-                        data-passthrough="ProductId=3113812;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                        <div  class="pricing">Gold</div><hr>
-                        <div class="duration"style="font-size: 16px;">80 indeed.com and 20 non indeed template conversion per month</div>
+                        <div class="duration"style="font-size: 16px;">80 indeed.com and 80 non indeed template conversion per month</div>
                         <div class="ammount" style="    margin-bottom: 50px; margin-top: 26px; font-size: 23px;">10 templates to choose from $19.99/month</div><br><br>
                         <!-- <div class="period" style="    margin-bottom: -8px;">$19.99/month</div><br><br> -->
                         <div class="btn btn-success">Sign Up</div>
                     </a>
                     <a class="price best"
-                    href="{{ route('register') }}"
-                    data-product-id="519713" data-title="Lifetime"
-                    data-passthrough="ProductId=3113812;UserId=;AppVersion=a" data-message=""
-                    data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                    <div  class="pricing">Platinum</div><hr>
                     <div class="duration" style="    font-size: 17px;">Unlimited indeed.com and non indeed.com Templates conversion per month generation</div>
                     <div class="ammount"style="      font-size: 20px;
@@ -100,10 +90,7 @@
                 </div>
                 <div class="prices yearly_plan plan_price">
                     <a class="price"
-                    href="{{ route('register') }}"
-                        data-product-id="577466" data-title="1 month"
-                        data-passthrough="ProductId=577466;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                         <div class="pricing">Silver</div><hr>
                         <div class="duration"  style="margin-top: 20px;">30 indeed.com templates conversion per month</div>
                         <div class="ammount" style="    margin-bottom: 89px;">5 templates to choose from $99.99/year</div>
@@ -111,22 +98,16 @@
                         <div class="btn btn-success">Sign Up</div>
                     </a>
                     <a class="price save"
-                    href="{{ route('register') }}"
-                        data-product-id="552811" data-title="12 months"
-                        data-passthrough="ProductId=552811;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                         <div  class="pricing">Gold</div><hr>
-                        <div class="duration"  style="margin-top: 20px;    font-size: 17px;">80 indeed.com and 20 non indeed template conversion per month</div>
+                        <div class="duration"  style="margin-top: 20px;    font-size: 17px;">80 indeed.com and 80 non indeed template conversion per month</div>
                         <div class="ammount"style="margin-top: 23px;
                         margin-bottom: 88px;">10 templates to choose from $199.99/year</div>
                         <!-- <div class="period">$199.99/year</div><br><br> -->
                         <div class="btn btn-success">Sign Up</div>
                     </a>
                     <a class="price best"
-                    href="{{ route('register') }}"
-                        data-product-id="519713" data-title="Lifetime"
-                        data-passthrough="ProductId=3113812;UserId=;AppVersion=a" data-message=""
-                        data-redirect="/order-completed">
+                    href="{{ route('register') }}">
                         <div  class="pricing">Platinum</div><hr>
                         <div class="duration" style="    font-size: 17px;">Unlimited indeed.com and non indeed.com Templates conversion per month generation</div>
                         <div class="ammount"style='font-size: 21px;

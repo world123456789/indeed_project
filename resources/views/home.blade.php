@@ -21,17 +21,26 @@
         <nav class="layout-header-nav">
             <a class="logo" href="{{ route('/') }}">
                 <img src="{{ asset('public/asset/image/logo.png') }}" class="logo-image" alt="" srcset="">
+            <div style="width:100%;text-align:right;@guest padding-top: 10px @endguest">
+                @auth   
+                <div class=""style="display:flex;width:100%;">                      
+                    <p class="indood" style="padding-bottom: 0;">5 indeed.com template conversion remaining.</p>
+                    <p class="indood ">5 non indeed.com template conversion remaining</p>
+                </div>  
+                @endauth
                 <span class="logo-text">Converts Resume to Different Template with Little or no Edits
                 </span>
+                </div>              
             </a>
             @if (Route::has('login'))
                 @auth
-                    <div class="main-menu header-menu" style="margin-left: 19px;justify-content: end;">
+                    {{-- <div class="main-menu header-menu" style="margin-left: 19px;justify-content: end;">
                         <p class="indood" style="padding-bottom: 0;
                     margin-top: 17px;">5 indeed.com template conversion remaining.</p>
                         <p class="indood">5 non indeed.com template conversion remaining</p>
-                    </div>
+                    </div> --}}
                     <div class="user-menu">
+                        <a href="#" class="menu-item show-unauth">Uugrade</a>
                         <a href="{{ route('profile.show') }}" class="menu-item show-unauth">My profile</a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -141,9 +150,9 @@
         </section>
         <div class="content-container light start-panel">
             <section class="howto-container">
-                <h2 class="howto-title">Change how to Convert indeed.com or non indeed.com Resume to Templates</h2>
+                <h2 class="howto-title">How to Convert indeed.com or non indeed.com Resume to Templates</h2>
                 <ol class="howto-steps">
-                    <li class="howto-step">Choose the resume in pdf you want to convert. </li>
+                    <li class="howto-step">Choose resume.</li>
                     <li class="howto-step">Add the resume using “Choose resume” link</li>
                     <li class="howto-step">Pick a target template of your choice. </li>
                     <li class="howto-step">Click convert and our system will convert the resume into template of your
@@ -181,7 +190,7 @@
                 <div class="testimonial-header">
                     <div class="testimonial-title">Over 5000 happy customers</div>
                     <div id="convert-counter" data-template="{0} conversions since 2005!"><span
-                            class="count">500000</span>conversions since 2020!</div>
+                            class="count">500000 </span>conversions since 2020!</div>
                 </div>
                 <blockquote class="well testimonial-body">
                     <p class="testimonial">What a life saver! I have been searching for an app that will convert resumes

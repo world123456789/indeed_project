@@ -536,7 +536,7 @@ button {
 	white-space: nowrap;
 	text-decoration: none;
 	color: #424242;
-	padding: 1.5ex 1.5em;
+	padding: 0ex 1em;
 	cursor: pointer
 }
 
@@ -1388,15 +1388,17 @@ html .logo {
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-position-x: 1ex;
-	background-size: 1.2em
+	background-size: 1.2em;
+	width: 100%;
 }
 
 html .logo .logo-text {
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 	color: #503a41;
 	font-weight: bold;
-	white-space: nowrap
+	white-space: nowrap;
+	padding-right: 2em;
 }
 
 html.modal {
@@ -1470,7 +1472,7 @@ html body .layout-header .layout-header-nav .user-menu {
 	justify-content: flex-end;
 	flex-wrap: nowrap;
 	align-items: center;
-	min-width: 12em
+	/* min-width: 12em */
 }
 
 html body .layout-header .layout-header-nav .user-menu .sign-up {
@@ -3271,6 +3273,7 @@ html[dir=rtl] .form-vertical .actions>*+* {
 }
 .indood{
 	width: 100%;
+	font-size: 15px;
 }
 @media screen and (min-width: 1128px) {
 	.home .index .layout-main .features-container, .home .converter .layout-main .features-container, .home .membership .layout-main .features-container {
